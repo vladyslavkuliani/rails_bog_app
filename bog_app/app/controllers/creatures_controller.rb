@@ -30,6 +30,11 @@ class CreaturesController < ApplicationController
     redirect_to creature_path(creature)
   end
 
+  def destroy
+    Creature.find_by(id: params[:id]).destroy
+    redirect_to creatures_path
+  end
+
   private
   def creature_params
     params.require(:creature).permit(:name, :description)

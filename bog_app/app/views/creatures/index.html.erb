@@ -1,6 +1,8 @@
 <% @creatures.each do |creature|%>
   <p>
     <strong>Name:</strong> <%= creature.name %><br>
-    <strong>Description:</strong> <%= creature.description %>
+    <strong>Description:</strong> <%= creature.description %><br>
+    <%= link_to "View", creature_path(creature)%>
+    <%= link_to "Edit", edit_creature_path(creature)%>
   </p>
 <%end%>
