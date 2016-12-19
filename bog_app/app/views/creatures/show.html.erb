@@ -1,4 +1,7 @@
 <h2><%=@creature.name%></h2>
+<hr>
 <p>
   <%=@creature.description%>
 </p>
+<%=link_to "Edit", edit_creature_path(@creature), class: "btn btn-info"%>
+<%=link_to "Return to creatures", creatures_path, class: "btn btn-success"%>

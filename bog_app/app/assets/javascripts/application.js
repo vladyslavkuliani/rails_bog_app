@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $("#home").click(function(){
+    window.location.href = "/"
+  });
+
+  $("#new").on('click', function(){
+    window.location.href = "/creatures/new"
+  })
+});

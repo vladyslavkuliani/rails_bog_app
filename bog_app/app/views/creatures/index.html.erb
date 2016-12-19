@@ -1,7 +1,14 @@
+<h1>Creatures</h1>
+<hr>
 <%@creatures.each do |c|%>
-<p>
+<div class="creature row">
+  <p class="col-md-8">
   <strong>Name:</strong><%=c.name%><br>
   <strong>Description:</strong><%=c.description%>
-  <%=button_to "Delete", c, method: :delete%>
-</p>
+  </p>
+  <div class="col-md-4">
+    <%=button_to "Delete", c, method: :delete, class: "btn btn-danger delete"%>
+    <%=link_to "View", creature_path(c), class: "btn btn-success delete"%>
+  </div>
+</div>
 <%end%>

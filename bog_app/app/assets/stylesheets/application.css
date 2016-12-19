@@ -14,3 +14,38 @@
  *= require_tree .
  *= require_self
  */
+ header{
+   height: 40px;
+   background: #FFDB00;
+ }
+
+ .nav{
+   margin-left: 50px;
+ }
+
+ .option{
+   float:left;
+   width: 80px;
+   text-align: center;
+   height: 40px;
+   padding-top: 10px
+ }
+
+ .option:hover{
+   border-bottom: 4px solid black;
+   cursor: pointer;
+ }
+
+ .creature{
+   border: 1px solid #E8E8E8;
+   border-radius: 5px;
+   padding-top:7px
+ }
+
+ .creature p{
+   float: left
+ }
+
+ .delete{
+   float: right;
+ }
