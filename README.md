@@ -1,11 +1,11 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Rails Bog App
 
 ### Intro
-After building this this app 4 times you'll be fluent in building CRUD apps and will feel confident in your Ruby on Rails skills.(Rails will stop being that magical as it seems...)
+After building this this app 4 times you'll be fluent in building CRUD apps and will feel confident in your Ruby on Rails skills.(Rails will stop being that magical as it seems...) \n
 Before building it:
-<img src="http://media0.giphy.com/media/D12CsrRNv7gL6/200.gif" width="40%">
+<img src="http://media0.giphy.com/media/D12CsrRNv7gL6/200.gif" width="40%"> \n
 After you finished:
-<img src="http://media3.giphy.com/media/opmIBtljGbwZi/200.gif" width="40%">
+<img src="http://media3.giphy.com/media/opmIBtljGbwZi/200.gif" width="40%">\n
 My personal timings completing this app:
 First-run: 42minutes
 Fourth-run: 23minutes
