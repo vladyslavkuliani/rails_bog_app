@@ -1,5 +1,15 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Rails Bog App
 
+### Intro
+After building this this app 4 times you'll be fluent in building CRUD apps and will feel confident in your Ruby on Rails skills.(Rails will stop being that magical as it seems...)
+Before building it:
+<img src="http://media0.giphy.com/media/D12CsrRNv7gL6/200.gif" width="40%">
+After you finished:
+<img src="http://media3.giphy.com/media/opmIBtljGbwZi/200.gif" width="40%">
+My personal timings completing this app:
+First-run: 42minutes
+Fourth-run: 23minutes
+
 ### Overview
 
 Everyone does blog apps. Now, you're going to work on a **bog app**. Researchers are collecting data on a local bog and need an app to quickly record field data.
@@ -768,12 +778,12 @@ Now that `params` are whitelisted in two different places in the `CreaturesContr
       # redirect_to creature_path(creature) is equivalent to:
       # redirect_to "/creatures/#{creature.id}"
     end
-    
+
     private
-    
+
     def creature_params
       # whitelist params return whitelisted version
-      params.require(:creature).permit(:name, :description) 
+      params.require(:creature).permit(:name, :description)
     end
 
   end
@@ -781,7 +791,7 @@ Now that `params` are whitelisted in two different places in the `CreaturesContr
   </p>
 </details>
 
-Refactor the `create` action to use this private method as well. 
+Refactor the `create` action to use this private method as well.
 
 
 Manually re-test your `creatures#create` method in the browser. Then, test your `creatures#update` method in the browser by editing the creature with an `id` of 1 (go to `localhost:3000/creatures/1/edit`). Then, `git add` and `git commit` your work.
@@ -887,7 +897,7 @@ At this point, you've created all the RESTful routes, implemented controller act
 ## Additional Development Ideas
 
 * Add links to other pages to help users navigate your site. For instance, a creature show page might have a link to the creatures index page. Use `link_to`.  Also link each creature on `creatures#index` to its individual `show` page.
-* If you'd like, add a Bootstrap `navbar` with links to the homepage (`/`) and the new creatures page (`/creatures/new`). This navbar should show up on every page. 
+* If you'd like, add a Bootstrap `navbar` with links to the homepage (`/`) and the new creatures page (`/creatures/new`). This navbar should show up on every page.
 * Read about [Active Record Validations](http://guides.rubyonrails.org/active_record_validations.html), and add validations to the `Creature` model to make sure a new creature can't be created without a `name` and `description`.
 * Read the docs for the [Paperclip gem](https://github.com/thoughtbot/paperclip), and incorporate it into your Bog App to upload photos of creatures locally.
 
