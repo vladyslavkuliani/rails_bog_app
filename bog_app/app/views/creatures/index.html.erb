@@ -2,6 +2,8 @@
   <p>
     <strong>Name:</strong><%=c.name%><br>
     <strong>Description:</strong><%=c.description%>
+    <%=link_to "View", creature_path(c)%><br>
     <%=button_to "Delete", c, method: :delete%>
   </p>
 <%end%>
+<%=link_to "Add new creature", new_creature_path%>
